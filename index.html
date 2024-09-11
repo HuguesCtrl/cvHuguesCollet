@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Hugues Collet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/FavIcon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/FavIcon//apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/FavIcon//apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/FavIcon//apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/FavIcon//apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/FavIcon//apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/FavIcon//apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/FavIcon//apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/FavIcon//apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/FavIcon//android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/FavIcon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/FavIcon//favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/FavIcon//favicon-16x16.png">
+  <link rel="manifest" href="/assets/FavIcon//manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Hugues Collet</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Expériences</a></li>
+        <li><a href="#experience">Compétences</a></li>
+        <li><a href="#projects">Mes Projets</a></li>
+        <li><a href="#contact">Me contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Hugues Collet</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">Expériences</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Compétences</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Mes Projets</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Me contacter</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Hugues_img.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Bonjour je suis,</p>
+      <h1 class="title">Hugues</h1>
+      <p class="section__text__p2">Graphiste vidéo</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/CV_Hugues.pdf')">
+          Mon CV en PDF
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#projects'">
+          Mes projets
+        </button>
+      </div>
+      <!-- <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'" />
+      </div> -->
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Mes formations et</p>
+    <h1 class="title">Expériences</h1>
+    <div class="section-container-exp">
+      <div class="about-details-container-exp">
+        <div class="about-containers-exp">
+          <div class="details-container-exp">
+            <h3><i class="fa-solid fa-briefcase"></i> Création de ma micro-entreprise (2024)</h3>
+            <p>Je travaille avec la Mission Locale de Reims, où je filme des jeunes en interview. L'objectif de mon entreprise est de communiquer pour exister, et non simplement de vendre une vidéo.</p>
+          </div>
+          <div class="details-container-exp">
+
+            <h3><i class="fa-solid fa-medal"></i> OpenClassrooms - Bac +2 Web (2023)</h3>
+            <p>Lors de la formation, j'ai appris à créer des sites Internet en utilisant les technologies les plus modernes, telles que React et Node.js, dans le cadre d'un parcours intensif et mentoré d'un an.</p>
+          </div>
+          <div class="details-container-exp">
+            <h3><i class="fa-solid fa-briefcase"></i> Ecole Lybre de Reims - Vidéaste/Photographe (2024)</h3>
+            <p>Gestion de la communication de l’école : création de visuels pour les journées portes ouvertes, de brochures pour les nouvelles formations, de vidéos pour Instagram, ainsi que de photos pour le site Internet.</p>
+          </div>
+          <div class="details-container-exp">
+            <h3><i class="fa-solid fa-medal"></i> Pixem Institut - Bac +2 Montage vidéo (2019)</h3>
+            <p>Lors de ma deuxième année de formation, j'ai approfondi mes compétences en vidéo en réalisant des interviews professionnelles et en pratiquant le motion design avec After Effects.</p>
+          </div>
+          <div class="details-container-exp">
+            <h3><i class="fa-solid fa-briefcase"></i> Agence Pulsi.com - Motion designer (2020)</h3>
+            <p>Réalisation de vidéos en motion design pour les entreprises avec After Effects, apprentissage de la gestion de projets et création de storyboards dans Illustrator.</p>
+          </div>
+          <div class="details-container-exp">
+            <h3><i class="fa-solid fa-medal"></i> Pixem Institut - Bac +1 Infographiste PAO (2018)</h3>
+            <p>Au cours de ma première année de formation en PAO, j'ai acquis une solide expérience en création visuelle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Toutes mes</p>
+    <h1 class="title">Compétences</h1>
+    <div class="experience-details-container">
+      <div class="about-containers-competences">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Vidéo<i class="fa-solid fa-video"></i></h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Tournage</h3>
+                <p>Captation vidéo au reflex (DSLR)</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Montage</h3>
+                <p>Utilisation des logiciels</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Motion design</h3>
+                <p>Animation avec After Effects</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Voix off</h3>
+                <p>Pour renforcer le message visuel</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Photo<i class="fa-solid fa-image"></i></h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Prise de vue</h3>
+                <p>Capture d'instant unique</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Photoshop / Lightroom</h3>
+                <p>Utilisation intensive</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Illustrator</h3>
+                <p>Utilisation fréquente</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Indesign</h3>
+                <p>Utilisation moins fréquente</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container" id="competences_card">
+          <h2 class="experience-sub-title">Savoir-être<i class="fa-solid fa-handshake"></i></h2>
+          <div class="article-container">
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Autonome</h3>
+                <p>Capable de trouver la solution</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Créatif</h3>
+                <p>Cherche à innover</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Force de proposition</h3>
+                <p>Actif et proactif</p>
+              </div>
+            </article>
+            <article>
+              <div>
+                <h3><i class="fa-solid fa-circle-check"></i>Respectueux</h3>
+                <p>Des horaires et du matériel</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Vidéo / Motion design / Infographie</p>
+    <h1 class="title">Mes projets</h1>
+    <div class="experience-details-container">
+      <div class="about-containers-projets">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/projet_1.png" alt="Project 1" class="project-img img-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">Interview étudiants</h2>
+          <div class="btn-container">
+            <a href="https://www.flickr.com/photos/199509818@N02/53986371312/in/dateposted-public/" target="_blank" id="link_projects" class="btn btn-color-2 project-btn">Voir le projet</a>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/projet_2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Parc Astérix</h2>
+          <div class="btn-container">
+            <a href="https://www.flickr.com/photos/199509818@N02/53987634779/in/dateposted-public/" target="_blank" id="link_projects" class="btn btn-color-2 project-btn">Voir le projet</a>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container last-child-grid">
+            <img src="./assets/projet_3.jpg" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Visuels Ligue 1</h2>
+          <div class="btn-container">
+            <a href="https://www.flickr.com/photos/199509818@N02/albums/72177720312938781/" target="_blank" id="link_projects" class="btn btn-color-2 project-btn">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">N'hésitez plus</p>
+    <h1 class="title">Contactez-moi</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:hc.pro@outlook.fr">M'envoyer un mail</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/hugues-collet-856175198/" target="_blank">Mon LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Expériences</a></li>
+          <li><a href="#experience">Compétences</a></li>
+          <li><a href="#projects">Mes projets</a></li>
+          <li><a href="#contact">Me contacter</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
