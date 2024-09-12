@@ -414,6 +414,7 @@ article .icon {
 
 #projets {
   position: relative;
+  min-height: 96vh;
 }
 
 .about-containers-projets {
